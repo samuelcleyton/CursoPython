@@ -1,2 +1,4 @@
-# CursoPython
- primeiro repositório
+# Curso de Python
+ Introdução à programação Python
+
+
