@@ -1,0 +1,5 @@
+'''
+Operadores Aritméticos:
++, -, *, /, //, ** e %
+'''
+
