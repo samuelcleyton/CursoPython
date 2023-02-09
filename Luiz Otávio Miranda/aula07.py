@@ -41,5 +41,33 @@ nesse exemplo, temos dois laços de repetições, o 1° que informa que enquanto
 
 '''
 
+# Calculadora Simples
 
+while True:
+    n1 = input('Digite um número: ')
+    n2 = input('Digite outro número: ')
+    operador = str(input('Qual operação você deseja realizar? ')).strip().lower()
 
+    if not n1.isnumeric() or not n2.isnumeric():
+        print('Você precisa digitar um número! ')
+        continue  # vai ignorar tudo o que está abaixo, repete o while do início.
+    
+    n1 = int(n1)
+    n2 = int(n2)
+
+    if operador == 'soma':
+        print('{} + {} = {}'.format(n1, n2, n1 + n2))
+    elif operador == 'subtração':
+        print('{} - {} = {}'.format(n1, n2, n1 - n2))
+    elif operador == 'multiplicação':
+        print('{} * {} = {}'.format(n1, n2, n1 * n2))
+    elif operador == 'divisão':
+        print('{} / {} = {}'.format(n1, n2, n1 / n2))
+    else:
+        print('Operador inválido!')
+
+    sair = str(input('Deseja continuar? [S/N]: ')).strip().lower()
+    if sair == 'n':
+        break
+
+print('Calculo realizado!')
