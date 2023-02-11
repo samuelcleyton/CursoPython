@@ -5,4 +5,4 @@ x = 1
 n = int(input('Quantos termos você deseja ver da sequência de Fibonacci? '))
 
 for c in range(0, n):
-   
+    

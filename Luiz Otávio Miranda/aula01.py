@@ -1,10 +1,13 @@
+# Comentários de Códigos
+# O código é lido da esquerda para direita, de cima para baixo!
 
-print('Linha 01')
-print('Linha 02')
-print('Linha 03')
-print('Linha 04')
-print('Linha 05')
+print(123) # A função print significa imprimir algo na tela.
 
+'''
+Docstrings: 
+o interpretador do python lê o que está escrito dentro da nota
+* importante: se abrir com aspas duplas, deve fechar com aspas duplas
+'''
 
-
+# o interpretador ignora a linha quando utilizamos o hashtag
 
