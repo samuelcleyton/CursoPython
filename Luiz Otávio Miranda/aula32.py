@@ -30,6 +30,8 @@ try:
         print('Boa tarde!')
     elif 18 <= hora_int <= 23:
         print('Boa noite!')
+    else:
+        print('Não conheço essa hora!')
 except:
     print('Digite um número!')
 
