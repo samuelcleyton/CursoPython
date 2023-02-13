@@ -1,3 +1,23 @@
+""" while/else """
+
+string = 'Valor qualquer'
+
+i = 0
+
+while i < len(string):
+    letra = string[i]
+
+    print(letra)
+
+    i += 1
+else:
+    print('O else foi executado!')
+
+print('fora do while!')
+
+# Quando o laço vai até o final, o else é executado.
+# Casa haja um break no meio do while, o else não será executado!
+
 '''
 While / Else:
 Contadores e Acumuladores
