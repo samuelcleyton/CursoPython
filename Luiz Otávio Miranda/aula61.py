@@ -43,3 +43,6 @@ else:
     print(f'O resultado é {resultado}')
     cpf.append(cpf)
     print(cpf)
+
+
+###
