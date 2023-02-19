@@ -26,23 +26,32 @@ O primeiro dígito do CPF é 7
 """
 
 cpf = input('Digite os 9 primeiros digitos do seu CPF: ')
+print(cpf.split())
+
+
+
 i = 10
 soma = 0
 
-for digito in cpf:
-    digito_int = int(digito)
-    digito_mult = digito_int * i
-    soma = soma + digito_mult
-    i = i - 1
+try:
+    cpf_int = int(cpf)
+    
+    for digito in cpf:
+        digito_int = int(digito)
+        digito_mult = digito_int * i
+        soma = soma + digito_mult
+        i = i - 1
 
-resultado = soma * 10 % 11
+    resultado = soma * 10 % 11
 
-if resultado > 9:
-    print('O resultado é 0')
-else:
-    print(f'O resultado é {resultado}')
-    cpf.append(cpf)
-    print(cpf)
+    cpf_str = str(cpf)
+    novo_cpf = [cpf_str]
 
+    if resultado > 9:
+        novo_cpf.append(str(0))
+    else:
+        novo_cpf.append(str(resultado))
+except:
+    print('Digite apenas números!')
 
-###
+print('-'.join(novo_cpf))
