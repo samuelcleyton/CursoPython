@@ -55,9 +55,12 @@ cpf = str(input('Digite o seu CPF: '))
 
 correção_1 = cpf.replace('.', '').replace('-', '')
 correção_2 = re.sub(r'[^0-9]', '', correção_1)
+# correção_3 = correção_2 == correção_2[0] * len(correção_2)
 
+# if correção_3 == True:
+#    print('CPF inválido!')
+    
 nove_digitos = correção_2[:9]
-
 
 count_1 = 10
 soma_1 = 0
