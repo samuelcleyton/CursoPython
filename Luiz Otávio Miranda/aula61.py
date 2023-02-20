@@ -49,9 +49,14 @@ contrário disso:
 O segundo dígito do CPF é 0
 
 """
+import re 
 
-cpf = input('Digite o seu CPF: ')
-nove_digitos = cpf[:9]
+cpf = str(input('Digite o seu CPF: '))
+
+correção_1 = cpf.replace('.', '').replace('-', '')
+correção_2 = re.sub(r'[^0-9]', '', correção_1)
+
+nove_digitos = correção_2[:9]
 
 
 count_1 = 10
