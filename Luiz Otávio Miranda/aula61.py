@@ -90,9 +90,11 @@ try:
     else:
         novo_cpf.append(str(resultado_2))
 
+    cpf_completo = novo_cpf [0] + novo_cpf[1] + novo_cpf[2]
+    print(f'Os dois últimos digitos do seu cpf é {resultado_1, resultado_2}')
+    print(f'CPF: {cpf_completo}')
+
 except:
     print('Digite apenas números!')
 
-cpf_completo = novo_cpf [0] + novo_cpf[1] + novo_cpf[2]
-print(f'Os dois últimos digitos do seu cpf é {resultado_1, resultado_2}')
-print(f'CPF: {cpf_completo}')
+
