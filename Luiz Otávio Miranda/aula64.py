@@ -107,4 +107,6 @@ try:
 except:
     print('Digite apenas números!')
 
-
+# import random
+# for i in range(9):
+# nove_digitos += str(random.randint(0, 9)) - para gerar 9 digitos aleatórios
