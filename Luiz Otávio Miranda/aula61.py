@@ -69,19 +69,22 @@ try:
         soma_1 = soma_1 + multi_1
         count_1 = count_1 - 1
 
-    for numeros in novo_cpf:
-        multi_2 = int(numeros) * count_2
-        soma_2 = soma_2 + multi_2
-        count_2 = count_2 - 1
-
     resultado_1 = (soma_1 * 10) % 11
-    resultado_2 = (soma_2 * 10) % 11
     
     if resultado_1 <= 9:
         novo_cpf.append(str(resultado_1))
     else:
         novo_cpf.append('0')
 
+    cpf_2_dig = novo_cpf[0] + novo_cpf[1]
+
+    for numeros in cpf_2_dig:
+        multi_2 = int(numeros) * count_2
+        soma_2 = soma_2 + multi_2
+        count_2 = count_2 - 1
+    
+    resultado_2 = (soma_2 * 10) % 11
+    
     if resultado_2 > 9:
         novo_cpf.append('0')
     else:
@@ -90,5 +93,6 @@ try:
 except:
     print('Digite apenas números!')
 
-cpf_completo = novo_cpf[0] + novo_cpf[1]
-print(cpf_completo)
+cpf_completo = novo_cpf [0] + novo_cpf[1] + novo_cpf[2]
+print(f'Os dois últimos digitos do seu cpf é {resultado_1, resultado_2}')
+print(f'CPF: {cpf_completo}')
