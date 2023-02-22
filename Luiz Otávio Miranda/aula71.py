@@ -28,3 +28,4 @@ outra_soma = soma(*numeros) # desempacota uma tupla
 print(outra_soma)
 
 print(sum(numeros))
+
