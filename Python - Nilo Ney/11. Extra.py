@@ -1,6 +1,6 @@
+salario = float(input('Digite o valor do salário: '))
+aumento = int(input('Qual a porcentagem de aumento: '))
 
-L = [10, 9, 8, 7, 6]
+novo_salario = salario + (salario * aumento / 100)
 
-for x, e in enumerate(L):
-    print(f'[{x}] {e}')
-    
+print(f'Seu sálario era {salario}, mas com o aumento de {aumento}% será {novo_salario:.2f} reais')
