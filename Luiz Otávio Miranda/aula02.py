@@ -12,13 +12,6 @@ print(45, 67)
 
 # Print com letra maiúscula não funciona no python
 
-
-
-
-
-
-
-
 print('Samuel', 'Cleyton', sep='*', end='*')
 print('Macena', 'Oliveira', sep='*')
 
@@ -27,6 +20,3 @@ print('Macena', 'Oliveira', sep='*')
 
 print('017', '416', '154', sep='.', end='-')
 print('96')
-
-
-
