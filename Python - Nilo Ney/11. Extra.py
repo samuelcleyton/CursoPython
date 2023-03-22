@@ -1,5 +1,4 @@
-lista = []
+def soma(x, y):
+    print(x + y)
 
-lista.insert(0, 2)
-
-print(lista)
+soma(5, 6)
