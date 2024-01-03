@@ -3,7 +3,7 @@
 
 n = int(input('Digite um número: '))
 
-if n // 5 and n % 5 == 0:
+if n // 5 and n % 5 == 0 or n == 0:
     print('Buzz')
 else: 
     print(n)
