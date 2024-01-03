@@ -3,8 +3,10 @@
 
 n = int(input('Digite um número: '))
 
-if n // 3 and n % 3 == 0:
-    if n // 5 and n % 5 == 0:
+if n // 3 and n % 3 == 0 or n == 0:
+    if n // 5 and n % 5 == 0 or n == 0:
         print('FizzBuzz')
+    else:
+        print(n)
 else: 
     print(n)
