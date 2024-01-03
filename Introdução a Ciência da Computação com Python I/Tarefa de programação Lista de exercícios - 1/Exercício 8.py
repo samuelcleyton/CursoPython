@@ -3,7 +3,8 @@
 
 n = int(input('Digite um número: '))
 
-if n // 3 and n % 3 == 0:
+if n // 3 and n % 3 == 0 or n == 0:
     print('Fizz')
 else:
     print(n)
+
