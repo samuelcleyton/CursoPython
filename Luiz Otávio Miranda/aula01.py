@@ -9,5 +9,4 @@ o interpretador do python lê o que está escrito dentro da nota
 * importante: se abrir com aspas duplas, deve fechar com aspas duplas
 '''
 
-# o interpretador ignora a linha quando utilizamos o hashtag
-
+# o interpretador ignora a linha quando utilizamos o hashtag.
