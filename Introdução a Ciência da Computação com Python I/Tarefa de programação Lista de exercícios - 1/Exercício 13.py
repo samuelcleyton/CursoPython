@@ -14,11 +14,3 @@ while (not terminou):
 
 print('P = ', p)
 print('I = ', i)
-
-
-
-
-
-
-
-
