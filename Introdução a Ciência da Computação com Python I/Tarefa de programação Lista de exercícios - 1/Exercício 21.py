@@ -6,5 +6,7 @@ def maximo(x, y):
     else:
         return y
 
-x = maximo(9, 12)
-print(x)
+x = int(input('digite um número inteiro: '))
+y = int(input('digite outro número inteiro: '))
+
+print(maximo(x, y))
